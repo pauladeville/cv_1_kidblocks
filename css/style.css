@@ -152,13 +152,13 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: black;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
 }
 
 a:not([href]):not([class]) {
@@ -2858,15 +2858,15 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: black;
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
 }
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -4540,13 +4540,13 @@ input[type=button].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: black;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 .page-link:hover {
   z-index: 2;
-  color: #0056b3;
+  color: black;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -9899,6 +9899,7 @@ h3 {
 body {
   margin: 0;
   padding: 0;
+  background-color: #f3f3f3;
   color: #000000;
   line-height: 1.2;
 }
@@ -9906,7 +9907,9 @@ body {
 #profile-box {
   background-color: #ffba19;
   border: 4px solid #000000;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
 }
@@ -9926,7 +9929,10 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   border: 2px solid #000000;
-  border-radius: 10px;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
   text-align: center;
 }
 #profile-box p,
@@ -9935,14 +9941,29 @@ body {
   font-weight: 400;
 }
 #profile-box:hover {
-  transform: translate(-10px, -10px) scale(1.01);
-  box-shadow: 7px 7px 0px #ffba19, 10px 10px 0px #000000;
+  transform: translate(-11px, -11px) scale(1.01);
+  box-shadow: 7px 7px 0px #ffba19, 11px 11px 0px #000000;
+}
+#profile-box h1 {
+  background-color: #000000;
+  color: #ffba19;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+}
+
+.fa {
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 15px;
 }
 
 #jobs-box {
-  background-color: #ff7706;
+  background-color: #ff88d5;
   border: 4px solid #000000;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
 }
@@ -9962,7 +9983,10 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   border: 2px solid #000000;
-  border-radius: 10px;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
   text-align: center;
 }
 #jobs-box p,
@@ -9971,18 +9995,19 @@ body {
   font-weight: 400;
 }
 #jobs-box:hover {
-  transform: translate(-10px, -10px) scale(1.01);
-  box-shadow: 7px 7px 0px #ff7706, 10px 10px 0px #000000;
+  transform: translate(-11px, -11px) scale(1.01);
+  box-shadow: 7px 7px 0px #ff88d5, 11px 11px 0px #000000;
 }
 #jobs-box h3 {
   margin-top: 20px;
-  width: 50%;
 }
 
 #skills-box {
-  background-color: #ff88d5;
+  background-color: #46b336;
   border: 4px solid #000000;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
 }
@@ -10002,7 +10027,10 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   border: 2px solid #000000;
-  border-radius: 10px;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
   text-align: center;
 }
 #skills-box p,
@@ -10011,17 +10039,16 @@ body {
   font-weight: 400;
 }
 #skills-box:hover {
-  transform: translate(-10px, -10px) scale(1.01);
-  box-shadow: 7px 7px 0px #ff88d5, 10px 10px 0px #000000;
-}
-#skills-box h3 {
-  width: 90%;
+  transform: translate(-11px, -11px) scale(1.01);
+  box-shadow: 7px 7px 0px #46b336, 11px 11px 0px #000000;
 }
 
 #school-box {
   background-color: #7959ff;
   border: 4px solid #000000;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
 }
@@ -10041,7 +10068,10 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   border: 2px solid #000000;
-  border-radius: 10px;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
   text-align: center;
 }
 #school-box p,
@@ -10050,18 +10080,17 @@ body {
   font-weight: 400;
 }
 #school-box:hover {
-  transform: translate(-10px, -10px) scale(1.01);
-  box-shadow: 7px 7px 0px #7959ff, 10px 10px 0px #000000;
-}
-#school-box h3 {
-  width: 300px;
+  transform: translate(-11px, -11px) scale(1.01);
+  box-shadow: 7px 7px 0px #7959ff, 11px 11px 0px #000000;
 }
 
 #link-box1,
 #link-box2 {
-  background-color: #46b336;
+  background-color: #ff7706;
   border: 4px solid #000000;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
 }
@@ -10084,7 +10113,10 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   border: 2px solid #000000;
-  border-radius: 10px;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
   text-align: center;
 }
 #link-box1 p,
@@ -10096,8 +10128,8 @@ body {
 }
 #link-box1:hover,
 #link-box2:hover {
-  transform: translate(-10px, -10px) scale(1.01);
-  box-shadow: 7px 7px 0px #46b336, 10px 10px 0px #000000;
+  transform: translate(-11px, -11px) scale(1.01);
+  box-shadow: 7px 7px 0px #ff7706, 11px 11px 0px #000000;
 }
 #link-box1 p,
 #link-box2 p {
@@ -10113,16 +10145,19 @@ body {
 #profile-pic {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 #profile-pic img {
   border: 4px solid #000000;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
 }
 #profile-pic img:hover {
-  transform: translate(-10px, -10px) scale(1.01);
-  box-shadow: 7px 7px 0px #9b999c, 10px 10px 0px #000000;
+  transform: translate(-11px, -11px) scale(1.01);
+  box-shadow: 7px 7px 0px #f3f3f3, 11px 11px 0px #000000;
 }
 
 .has-border-bottom {

@@ -4,18 +4,22 @@
 //VARIABLES
 
 $accent-color1: #ffba19;
-$accent-color2: #ff7706;
-$accent-color3: #ff88d5;
+$accent-color2: #ff88d5;
+$accent-color3: #46b336;
 $accent-color4: #7959ff;
-$accent-color5: #46b336;
+$accent-color5: #ff7706;
 $border-color: #000000;
+$background-color: #f3f3f3;
 
 //MIXINS
 
 @mixin box-style($color) {
   background-color: $color;
   border: 4px solid $border-color;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+
   h1,
   h2 {
     border-bottom: 2px $border-color solid;
@@ -32,7 +36,10 @@ $border-color: #000000;
     font-size: 18px;
     text-transform: uppercase;
     border: 2px solid $border-color;
-    border-radius: 10px;
+    box-shadow: 2px 2px 0px $border-color;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
     text-align: center;
   }
   p,
@@ -46,8 +53,8 @@ $border-color: #000000;
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
   &:hover {
-  transform: translate(-10px, -10px) scale(1.01);
-  box-shadow: 7px 7px 0px $color, 10px 10px 0px $border-color;
+  transform: translate(-11px, -11px) scale(1.01);
+  box-shadow: 7px 7px 0px $color, 11px 11px 0px $border-color;
   }
 }
 
@@ -56,6 +63,7 @@ $border-color: #000000;
 body {
   margin: 0;
   padding: 0;
+  background-color: $background-color;
   color: #000000;
   line-height: 1.2;
 }
@@ -63,28 +71,38 @@ body {
 #profile-box {
   @include box-style($accent-color1);
   @include zoom-effect($accent-color1);
+  h1 {
+    background-color: #000000;
+    color: #ffba19;
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+  }
 }
+
+.fa {
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
 #jobs-box {
   @include box-style($accent-color2);
   @include zoom-effect($accent-color2);
   h3 {
 	margin-top: 20px;
-	width: 50%;
   }
 }
 #skills-box {
   @include box-style($accent-color3);
   @include zoom-effect($accent-color3);
-  h3 {
-    width: 90%;
-  }
 }
 #school-box {
   @include box-style($accent-color4);
   @include zoom-effect($accent-color4);
-  h3{
-	width: 300px;
-  }
+  // h3{
+	// width: 300px;
+  // }
 }
 #link-box1,
 #link-box2 {
@@ -103,10 +121,13 @@ body {
 #profile-pic {
   padding: 0;
   margin: 0;
+  text-align: center;
   img {
     border: 4px solid $border-color;
-    border-radius: 30px;
-    @include zoom-effect(#9b999c);
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    @include zoom-effect($background-color);
   }
 }
 
