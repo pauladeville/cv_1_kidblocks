@@ -9907,7 +9907,7 @@ body {
   border: 4px solid #000000;
   border-radius: 30px;
   transform: scale(1);
-  transition: transform 200ms;
+  transition: transform 400ms;
 }
 #profile-box h1,
 #profile-box h2 {
@@ -9927,7 +9927,6 @@ body {
   border: 2px solid #000000;
   border-radius: 10px;
   text-align: center;
-  width: 150px;
 }
 #profile-box p,
 #profile-box li {
@@ -9935,11 +9934,7 @@ body {
   font-weight: 400;
 }
 #profile-box:hover {
-  box-shadow: 6px 6px 0px #ffba19;
-  transform: scale(1.01);
-}
-#profile-box:hover {
-  box-shadow: 6px 6px 0px #ffba19;
+  box-shadow: 6px 6px 0px #ffba19, 10px 10px 0px #000000;
   transform: scale(1.01);
 }
 
@@ -9948,7 +9943,7 @@ body {
   border: 4px solid #000000;
   border-radius: 30px;
   transform: scale(1);
-  transition: transform 200ms;
+  transition: transform 400ms;
 }
 #jobs-box h1,
 #jobs-box h2 {
@@ -9968,7 +9963,6 @@ body {
   border: 2px solid #000000;
   border-radius: 10px;
   text-align: center;
-  width: 150px;
 }
 #jobs-box p,
 #jobs-box li {
@@ -9976,11 +9970,7 @@ body {
   font-weight: 400;
 }
 #jobs-box:hover {
-  box-shadow: 6px 6px 0px #ff7706;
-  transform: scale(1.01);
-}
-#jobs-box:hover {
-  box-shadow: 6px 6px 0px #ff7706;
+  box-shadow: 6px 6px 0px #ff7706, 10px 10px 0px #000000;
   transform: scale(1.01);
 }
 #jobs-box h3 {
@@ -9993,7 +9983,7 @@ body {
   border: 4px solid #000000;
   border-radius: 30px;
   transform: scale(1);
-  transition: transform 200ms;
+  transition: transform 400ms;
 }
 #skills-box h1,
 #skills-box h2 {
@@ -10013,7 +10003,6 @@ body {
   border: 2px solid #000000;
   border-radius: 10px;
   text-align: center;
-  width: 150px;
 }
 #skills-box p,
 #skills-box li {
@@ -10021,12 +10010,103 @@ body {
   font-weight: 400;
 }
 #skills-box:hover {
-  box-shadow: 6px 6px 0px #ff88d5;
+  box-shadow: 6px 6px 0px #ff88d5, 10px 10px 0px #000000;
   transform: scale(1.01);
 }
-#skills-box:hover {
-  box-shadow: 6px 6px 0px #ff88d5;
+#skills-box h3 {
+  width: 150px;
+}
+
+#school-box {
+  background-color: #7959ff;
+  border: 4px solid #000000;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+#school-box h1,
+#school-box h2 {
+  border-bottom: 2px #000000 solid;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#school-box h3 {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+}
+#school-box p,
+#school-box li {
+  font-size: 18px;
+  font-weight: 400;
+}
+#school-box:hover {
+  box-shadow: 6px 6px 0px #7959ff, 10px 10px 0px #000000;
   transform: scale(1.01);
+}
+#school-box h3 {
+  width: 300px;
+}
+
+#link-box1,
+#link-box2 {
+  background-color: #46b336;
+  border: 4px solid #000000;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+#link-box1 h1,
+#link-box1 h2,
+#link-box2 h1,
+#link-box2 h2 {
+  border-bottom: 2px #000000 solid;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#link-box1 h3,
+#link-box2 h3 {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+}
+#link-box1 p,
+#link-box1 li,
+#link-box2 p,
+#link-box2 li {
+  font-size: 18px;
+  font-weight: 400;
+}
+#link-box1:hover,
+#link-box2:hover {
+  box-shadow: 6px 6px 0px #46b336, 10px 10px 0px #000000;
+  transform: scale(1.01);
+}
+#link-box1 p,
+#link-box2 p {
+  text-align: center;
+  margin: 5% 0 5% 0;
+  text-transform: uppercase;
+}
+#link-box1 p i,
+#link-box2 p i {
+  margin-left: 15px;
 }
 
 #profile-pic {
@@ -10037,16 +10117,20 @@ body {
   border: 4px solid #000000;
   border-radius: 30px;
   transform: scale(1);
-  transition: transform 200ms;
+  transition: transform 400ms;
 }
 #profile-pic img:hover {
-  box-shadow: 6px 6px 0px #000000;
+  box-shadow: 6px 6px 0px #9b999c, 10px 10px 0px #000000;
   transform: scale(1.01);
 }
 
 #border-bottomed {
   width: 100%;
   border-bottom: 2px #000000 solid;
+}
+
+#has-border-right {
+  border-right: 2px #000000 solid;
 }
 
 /*# sourceMappingURL=style.css.map */

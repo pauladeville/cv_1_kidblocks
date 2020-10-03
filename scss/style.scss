@@ -7,7 +7,7 @@ $accent-color1: #ffba19;
 $accent-color2: #ff7706;
 $accent-color3: #ff88d5;
 $accent-color4: #7959ff;
-$accent-color4: #46b336;
+$accent-color5: #46b336;
 $border-color: #000000;
 
 //MIXINS
@@ -34,24 +34,19 @@ $border-color: #000000;
     border: 2px solid $border-color;
     border-radius: 10px;
     text-align: center;
-    width: 150px;
   }
   p,
   li {
     font-size: 18px;
     font-weight: 400;
   }
-  &:hover {
-    box-shadow: 6px 6px 0px $color;
-    transform: scale(1.01);
-  }
 }
 
 @mixin zoom-effect($color) {
   transform: scale(1);
-  transition: transform 200ms;
+  transition: transform 400ms;
   &:hover {
-    box-shadow: 6px 6px 0px $color;
+	box-shadow: 6px 6px 0px $color, 10px 10px 0px $border-color;
     transform: scale(1.01);
   }
 }
@@ -72,13 +67,36 @@ body {
   @include box-style($accent-color2);
   @include zoom-effect($accent-color2);
   h3 {
-    margin-top: 20px;
-    width: 250px;
+	margin-top: 20px;
+	width: 250px;
   }
 }
 #skills-box {
   @include box-style($accent-color3);
   @include zoom-effect($accent-color3);
+  h3 {
+    width: 150px;
+  }
+}
+#school-box {
+  @include box-style($accent-color4);
+  @include zoom-effect($accent-color4);
+  h3{
+	width: 300px;
+  }
+}
+#link-box1,
+#link-box2 {
+  @include box-style($accent-color5);
+  @include zoom-effect($accent-color5);
+  p {
+	  text-align: center;
+	  margin: 5% 0 5% 0;
+	  text-transform: uppercase;
+	  i {
+		  margin-left: 15px;
+	  }
+  }
 }
 
 #profile-pic {
@@ -86,12 +104,15 @@ body {
   margin: 0;
   img {
     border: 4px solid $border-color;
-	border-radius: 30px;
-	@include zoom-effect($border-color);
+    border-radius: 30px;
+    @include zoom-effect(#9b999c);
   }
 }
 
 #border-bottomed {
   width: 100%;
   border-bottom: 2px $border-color solid;
+}
+#has-border-right {
+  border-right: 2px $border-color solid;
 }
