@@ -53,8 +53,8 @@ $background-color: #f3f3f3;
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
   &:hover {
-  transform: translate(-11px, -11px) scale(1.01);
-  box-shadow: 7px 7px 0px $color, 11px 11px 0px $border-color;
+    transform: translate(-11px, -11px) scale(1.01);
+    box-shadow: 7px 7px 0px $color, 11px 11px 0px $border-color;
   }
 }
 
@@ -90,7 +90,7 @@ body {
   @include box-style($accent-color2);
   @include zoom-effect($accent-color2);
   h3 {
-	margin-top: 20px;
+    margin-top: 20px;
   }
 }
 #skills-box {
@@ -101,7 +101,7 @@ body {
   @include box-style($accent-color4);
   @include zoom-effect($accent-color4);
   // h3{
-	// width: 300px;
+  // width: 300px;
   // }
 }
 #link-box1,
@@ -109,12 +109,12 @@ body {
   @include box-style($accent-color5);
   @include zoom-effect($accent-color5);
   p {
-	  text-align: center;
-	  margin: 5% 0 5% 0;
-	  text-transform: uppercase;
-	  i {
-		  margin-left: 15px;
-	  }
+    text-align: center;
+    margin: 5% 0 5% 0;
+    text-transform: uppercase;
+    i {
+      margin-left: 15px;
+    }
   }
 }
 
