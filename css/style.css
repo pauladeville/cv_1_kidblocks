@@ -9900,14 +9900,15 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
+  line-height: 1.2;
 }
 
 #profile-box {
   background-color: #ffba19;
   border: 4px solid #000000;
   border-radius: 30px;
-  transform: scale(1);
-  transition: transform 400ms;
+  transform: translate(0, 0) scale(1);
+  transition: all 200ms ease-in-out;
 }
 #profile-box h1,
 #profile-box h2 {
@@ -9934,16 +9935,16 @@ body {
   font-weight: 400;
 }
 #profile-box:hover {
-  box-shadow: 6px 6px 0px #ffba19, 10px 10px 0px #000000;
-  transform: scale(1.01);
+  transform: translate(-10px, -10px) scale(1.01);
+  box-shadow: 7px 7px 0px #ffba19, 10px 10px 0px #000000;
 }
 
 #jobs-box {
   background-color: #ff7706;
   border: 4px solid #000000;
   border-radius: 30px;
-  transform: scale(1);
-  transition: transform 400ms;
+  transform: translate(0, 0) scale(1);
+  transition: all 200ms ease-in-out;
 }
 #jobs-box h1,
 #jobs-box h2 {
@@ -9970,20 +9971,20 @@ body {
   font-weight: 400;
 }
 #jobs-box:hover {
-  box-shadow: 6px 6px 0px #ff7706, 10px 10px 0px #000000;
-  transform: scale(1.01);
+  transform: translate(-10px, -10px) scale(1.01);
+  box-shadow: 7px 7px 0px #ff7706, 10px 10px 0px #000000;
 }
 #jobs-box h3 {
   margin-top: 20px;
-  width: 250px;
+  width: 50%;
 }
 
 #skills-box {
   background-color: #ff88d5;
   border: 4px solid #000000;
   border-radius: 30px;
-  transform: scale(1);
-  transition: transform 400ms;
+  transform: translate(0, 0) scale(1);
+  transition: all 200ms ease-in-out;
 }
 #skills-box h1,
 #skills-box h2 {
@@ -10010,19 +10011,19 @@ body {
   font-weight: 400;
 }
 #skills-box:hover {
-  box-shadow: 6px 6px 0px #ff88d5, 10px 10px 0px #000000;
-  transform: scale(1.01);
+  transform: translate(-10px, -10px) scale(1.01);
+  box-shadow: 7px 7px 0px #ff88d5, 10px 10px 0px #000000;
 }
 #skills-box h3 {
-  width: 150px;
+  width: 90%;
 }
 
 #school-box {
   background-color: #7959ff;
   border: 4px solid #000000;
   border-radius: 30px;
-  transform: scale(1);
-  transition: transform 400ms;
+  transform: translate(0, 0) scale(1);
+  transition: all 200ms ease-in-out;
 }
 #school-box h1,
 #school-box h2 {
@@ -10049,8 +10050,8 @@ body {
   font-weight: 400;
 }
 #school-box:hover {
-  box-shadow: 6px 6px 0px #7959ff, 10px 10px 0px #000000;
-  transform: scale(1.01);
+  transform: translate(-10px, -10px) scale(1.01);
+  box-shadow: 7px 7px 0px #7959ff, 10px 10px 0px #000000;
 }
 #school-box h3 {
   width: 300px;
@@ -10061,8 +10062,8 @@ body {
   background-color: #46b336;
   border: 4px solid #000000;
   border-radius: 30px;
-  transform: scale(1);
-  transition: transform 400ms;
+  transform: translate(0, 0) scale(1);
+  transition: all 200ms ease-in-out;
 }
 #link-box1 h1,
 #link-box1 h2,
@@ -10095,8 +10096,8 @@ body {
 }
 #link-box1:hover,
 #link-box2:hover {
-  box-shadow: 6px 6px 0px #46b336, 10px 10px 0px #000000;
-  transform: scale(1.01);
+  transform: translate(-10px, -10px) scale(1.01);
+  box-shadow: 7px 7px 0px #46b336, 10px 10px 0px #000000;
 }
 #link-box1 p,
 #link-box2 p {
@@ -10116,21 +10117,20 @@ body {
 #profile-pic img {
   border: 4px solid #000000;
   border-radius: 30px;
-  transform: scale(1);
-  transition: transform 400ms;
+  transform: translate(0, 0) scale(1);
+  transition: all 200ms ease-in-out;
 }
 #profile-pic img:hover {
-  box-shadow: 6px 6px 0px #9b999c, 10px 10px 0px #000000;
-  transform: scale(1.01);
+  transform: translate(-10px, -10px) scale(1.01);
+  box-shadow: 7px 7px 0px #9b999c, 10px 10px 0px #000000;
 }
 
-#border-bottomed {
-  width: 100%;
-  border-bottom: 2px #000000 solid;
+.has-border-bottom {
+  border-bottom: 2px #000000 dashed;
 }
 
-#has-border-right {
-  border-right: 2px #000000 solid;
+.has-border-right {
+  border-right: 2px #000000 dashed;
 }
 
 /*# sourceMappingURL=style.css.map */

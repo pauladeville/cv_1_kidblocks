@@ -43,11 +43,11 @@ $border-color: #000000;
 }
 
 @mixin zoom-effect($color) {
-  transform: scale(1);
-  transition: transform 400ms;
+  transform: translate(0, 0) scale(1);
+  transition: all 200ms ease-in-out;
   &:hover {
-	box-shadow: 6px 6px 0px $color, 10px 10px 0px $border-color;
-    transform: scale(1.01);
+  transform: translate(-10px, -10px) scale(1.01);
+  box-shadow: 7px 7px 0px $color, 10px 10px 0px $border-color;
   }
 }
 
@@ -57,6 +57,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
+  line-height: 1.2;
 }
 
 #profile-box {
@@ -68,14 +69,14 @@ body {
   @include zoom-effect($accent-color2);
   h3 {
 	margin-top: 20px;
-	width: 250px;
+	width: 50%;
   }
 }
 #skills-box {
   @include box-style($accent-color3);
   @include zoom-effect($accent-color3);
   h3 {
-    width: 150px;
+    width: 90%;
   }
 }
 #school-box {
@@ -109,10 +110,9 @@ body {
   }
 }
 
-#border-bottomed {
-  width: 100%;
-  border-bottom: 2px $border-color solid;
+.has-border-bottom {
+  border-bottom: 2px $border-color dashed;
 }
-#has-border-right {
-  border-right: 2px $border-color solid;
+.has-border-right {
+  border-right: 2px $border-color dashed;
 }
