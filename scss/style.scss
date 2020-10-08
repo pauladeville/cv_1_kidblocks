@@ -1,7 +1,7 @@
 @import "_variable_overrides";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-//VARIABLES
+//**********VARIABLES COULEURS**********
 
 $accent-color1: #ffba19;
 $accent-color2: #ff88d5;
@@ -11,15 +11,15 @@ $accent-color5: #ff7706;
 $border-color: #000000;
 $background-color: #fff;
 
-//MIXINS
+//**********MIXINS**********
 
+//Style des blocs de couleurs et de leur contenu
 @mixin box-style($color) {
   background-color: $color;
   border: 4px solid $border-color;
   border-radius: 20px 20px 20px 20px;
   -moz-border-radius: 20px 20px 20px 20px;
   -webkit-border-radius: 20px 20px 20px 20px;
-
   h1,
   h2 {
     border-bottom: 2px $border-color solid;
@@ -49,6 +49,7 @@ $background-color: #fff;
   }
 }
 
+//Animation CSS au passage de la souris sur le bloc
 @mixin zoom-effect($color) {
   transform: translate(0, 0) scale(1);
   transition: all 200ms ease-in-out;
@@ -58,7 +59,7 @@ $background-color: #fff;
   }
 }
 
-//CODE SCSS
+//**********CODE SCSS**********
 
 body {
   margin: 0;
@@ -68,6 +69,13 @@ body {
   line-height: 1.2;
 }
 
+.fa {
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+//Personnalisation de chaque bloc
 #profile-box {
   @include box-style($accent-color1);
   @include zoom-effect($accent-color1);
@@ -77,44 +85,6 @@ body {
     border-radius: 10px 10px 0px 0px;
     -moz-border-radius: 10px 10px 0px 0px;
     -webkit-border-radius: 10px 10px 0px 0px;
-  }
-}
-
-.fa {
-  font-size: 12px;
-  margin-right: 10px;
-  margin-left: 15px;
-}
-
-#jobs-box {
-  @include box-style($accent-color2);
-  @include zoom-effect($accent-color2);
-  h3 {
-    margin-top: 20px;
-  }
-}
-#skills-box {
-  @include box-style($accent-color3);
-  @include zoom-effect($accent-color3);
-}
-#school-box {
-  @include box-style($accent-color4);
-  @include zoom-effect($accent-color4);
-  // h3{
-  // width: 300px;
-  // }
-}
-#link-box1,
-#link-box2 {
-  @include box-style($accent-color5);
-  @include zoom-effect($accent-color5);
-  p {
-    text-align: center;
-    margin: 5% 0 5% 0;
-    text-transform: uppercase;
-    i {
-      margin-left: 15px;
-    }
   }
 }
 
@@ -131,6 +101,39 @@ body {
   }
 }
 
+#jobs-box {
+  @include box-style($accent-color2);
+  @include zoom-effect($accent-color2);
+  h3 {
+    margin-top: 20px;
+  }
+}
+
+#skills-box {
+  @include box-style($accent-color3);
+  @include zoom-effect($accent-color3);
+}
+
+#school-box {
+  @include box-style($accent-color4);
+  @include zoom-effect($accent-color4);
+}
+
+#link-box1,
+#link-box2 {
+  @include box-style($accent-color5);
+  @include zoom-effect($accent-color5);
+  p {
+    text-align: center;
+    margin: 5% 0 5% 0;
+    text-transform: uppercase;
+    i {
+      margin-left: 15px;
+    }
+  }
+}
+
+//Lignes de séparation dans les blocs
 .has-border-bottom {
   border-bottom: 2px $border-color dashed;
 }
