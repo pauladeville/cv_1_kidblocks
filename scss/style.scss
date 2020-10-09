@@ -75,6 +75,21 @@ body {
   margin-left: 15px;
 }
 
+#article-link {
+  background-color: #cecece;
+  :hover{
+    font-weight: bold;
+  }
+  a{
+    padding: 1%;
+    color: #000;
+    margin: auto;
+    span {
+      border-bottom: $border-color 2px dotted;
+    }
+  }
+}
+
 //Personnalisation de chaque bloc
 #profile-box {
   @include box-style($accent-color1);

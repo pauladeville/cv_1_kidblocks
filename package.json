@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pauladeville/CV#readme",
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "sass-node": "^4.11.2"
   }
 }
